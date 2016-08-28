@@ -1,0 +1,11 @@
+html {
+  background-color: white;
+}
+.footer {
+  background-color: white;
+}
+.container {
+  padding-top: 30px;
+  width: 80%;
+  margin: 0px auto;
+}
