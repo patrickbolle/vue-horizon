@@ -12,7 +12,7 @@ I'll be going over the following:
   - (Maybe) Authentication and User Management
 - Deployment to Digital Ocean
 
-I will be posting the different sections of this tutorial on [my website](http://patrickbollenbach/blog).
+I will be posting the different sections of this tutorial on [my website](http://patrickbollenbach.com/blog).
 
 Hope you can learn something from this!
 
