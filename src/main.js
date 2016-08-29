@@ -3,11 +3,12 @@ import App from './App.vue';
 import VueRouter from 'vue-router';
 //Import components
 import About from './components/About.vue';
-import Chat from './components/Chat.vue';
+import Notes from './components/Notes.vue';
 
+//Initialize Router
 Vue.use(VueRouter);
 
-//Initialize router
+//Pass some options to router
 const router = new VueRouter({
   history: true,
   hashbang: false
@@ -15,17 +16,18 @@ const router = new VueRouter({
 
 //Routes
 router.map({
+    '/': {
+        component: Notes
+    },
     '/about': {
         component: About
-    },
-    '/chat': {
-        component: Chat
     }
 });
 
-new Vue({
-  el: 'body',
-  components: { App }
+//Wildcard Redirects
+router.redirect({
+  '*': '/notes'
 });
 
+//Start the router in te #app div in index.html
 router.start(App, '#app');

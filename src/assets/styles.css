@@ -4,8 +4,15 @@ html {
 .footer {
   background-color: white;
 }
+.nav .container {
+  width: 80%;
+  border-bottom: 1px #f2ecec solid;
+}
 .container {
-  padding-top: 30px;
   width: 80%;
   margin: 0px auto;
+}
+
+.main {
+  padding-top: 30px;
 }
