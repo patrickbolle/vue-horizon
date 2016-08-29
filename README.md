@@ -1,8 +1,20 @@
 # vuehorizon
 
-> A Vue.js + Horizon JS project
+> A Vue.js + Horizon JS tutorial
 
-This is an implementation of the <a href="http://horizon.io/docs/getting-started/">Horizon Getting Started tutorial</a> combined with the <a href="https://github.com/vuejs-templates/webpack">Vue Webpack template</a>. I had trouble finding resources on how to combine the two (as they both scaffold their own folders), but I was able to get them to work together with a little bit of research.
+This application goes over the basics on how to connect [Vue JS](https://vuejs.org) with RethinkDB's [Horizon](https://horizon.io) project. This is really fast stack to work with and there isn't much documentation out there for connecting the two so I figured I'd build a tutorial to get people started.
+I'll be going over the following:
+- Installing Vue + Horizon
+- Connecting Vue + Horizon with their scaffolding tools
+- Building a full stack SPA for note-taking
+  - Vue-router for client side routing
+  - CRUD operations
+  - (Maybe) Authentication and User Management
+- Deployment to Digital Ocean
+
+I will be posting the different sections of this tutorial on [my website](http://patrickbollenbach/blog).
+
+Hope you can learn something from this!
 
 ## Build Setup
 
@@ -20,5 +32,3 @@ npm run dev
 npm run build
 
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
