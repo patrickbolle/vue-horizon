@@ -3,8 +3,8 @@
     <navbar></navbar>
     <div class="container main">
       <router-view></router-view>
+      <nav-foot></nav-foot>
     </div>
-    <nav-foot></nav-foot>
   </div>
 </template>
 

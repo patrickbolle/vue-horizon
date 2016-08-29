@@ -6,9 +6,9 @@
       <p class="control">
         <input @keyup.enter="takeNote" class="input" type="text" placeholder="Take a note and press enter">
       </p>
-      <div class="columns">
-        <div v-for="note in notes" class="column is-half">
-            <note-card :note="note"></note-card>
+      <div class="columns is-multiline">
+        <div v-for="note in notes" transition="expand" class="column is-6">
+          <note-card :note="note"></note-card>
         </div>
       </div>
     </div>
@@ -33,8 +33,12 @@ export default {
   },
   created() {
    // Subscribe to messages
-   notes.order('datetime', 'ascending').watch()
+   notes.order('datetime', 'descending').watch()
    .subscribe(allNotes => {
+       // Make a copy of the array and reverse it, so newest images push into
+       // the messages feed from the bottom of the rendered list. (Otherwise
+       // they appear initially at the top and move down)
+       this.notes = [...allNotes]
      },
      // When error occurs on server
      error => console.log(error)
@@ -42,6 +46,7 @@ export default {
  },
  methods: {
    takeNote(event) {
+     console.log("Take note triggered");
      notes.store({
        text: event.target.value, // Current value inside <input> tag
        datetime: new Date() // Warning clock skew!
@@ -53,6 +58,9 @@ export default {
        )
        // Clear input for next message
        event.target.value = ''
+   },
+   remove(noteId) {
+     notes.remove(noteId).subscribe((id) => { console.log(id) });
    }
  },
  components: {
@@ -62,4 +70,18 @@ export default {
 </script>
 
 <style lang="css">
+/* always present */
+.expand-transition {
+  transition: all .6s ease;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
 </style>

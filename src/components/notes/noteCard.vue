@@ -1,25 +1,20 @@
 <template lang="html">
-    <div class="card">
-      <header class="card-header is-full-width">
+    <div class="card is-fullwidth">
+      <header class="card-header ">
         <p class="card-header-title">
           {{ note.text }}
         </p>
-        <a class="card-header-icon">
-          <i class="fa fa-angle-down"></i>
+        <a class="card-header-icon" v-on:click="$parent.remove(note.id)">
+          <i class="fa fa-ban"></i>
         </a>
       </header>
       <div class="card-content">
         <div class="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
           <br>
-          <small>11:09 PM - 1 Jan 2016</small>
+          <small>{{note.datetime}}</small>
         </div>
       </div>
-      <footer class="card-footer">
-        <a class="card-footer-item">Save</a>
-        <a class="card-footer-item">Edit</a>
-        <a class="card-footer-item">Delete</a>
-      </footer>
     </div>
 </template>
 
@@ -28,7 +23,6 @@ export default {
   props: ['note'],
   data () {
     return {
-      text: ''
     }
   },
   computed: {},
