@@ -170,3 +170,33 @@
 2016-08-29T08:31:30.360770440 188.329336s info: Table 4c227afb-1208-4ed5-895f-e3468a371106: Added replica on this server.
 2016-08-29T08:31:30.417873097 188.386438s info: Table 4c227afb-1208-4ed5-895f-e3468a371106: This server is Raft leader for term 1. Latest log index is 0.
 2016-08-29T08:31:31.492141935 189.460707s info: Table 4c227afb-1208-4ed5-895f-e3468a371106: Configuration is changing.
+2016-08-29T09:36:44.815521034 4102.784086s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-08-29T09:36:44.879888440 4102.848453s notice: Shutting down client connections...
+2016-08-29T09:36:45.076865574 4103.045430s notice: All client connections closed.
+2016-08-29T09:36:45.076876670 4103.045441s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-08-29T09:36:45.266912690 4103.235478s notice: Storage engine shut down.
+2016-08-30T10:02:00.210622054 91.207879s notice: Running rethinkdb 2.3.4~0jessie (GCC 4.9.2)...
+2016-08-30T10:02:00.236324940 91.233581s notice: Running on Linux 3.16.0-4-amd64 x86_64
+2016-08-30T10:02:00.236507718 91.233759s notice: Loading data from directory /home/patrick/Programming/vue-horizon/rethinkdb_data
+2016-08-30T10:02:00.606513200 91.603770s info: Cache size is set to 200 MB
+2016-08-30T10:02:00.624839030 91.622091s notice: Listening for intracluster connections on port 53467
+2016-08-30T10:02:01.519452010 92.516703s notice: Listening for client driver connections on port 33931
+2016-08-30T10:02:01.519792215 92.517043s notice: Listening for administrative HTTP connections on port 59330
+2016-08-30T10:02:01.519829404 92.517080s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-08-30T10:02:01.519832615 92.517083s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-08-30T10:02:01.519834922 92.517086s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-08-30T10:02:01.519838308 92.517089s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-08-30T10:02:01.519870312 92.517121s notice: Server ready, "debian_rhj" 10028091-a713-4797-a858-eedb79ed3962
+2016-08-30T10:02:02.116863929 93.114116s info: Table 14bb5c46-1e73-44b7-b3c3-5fa33b738811: Starting a new Raft election for term 7.
+2016-08-30T10:02:02.192933945 93.190186s info: Table 14bb5c46-1e73-44b7-b3c3-5fa33b738811: This server is Raft leader for term 7. Latest log index is 24.
+2016-08-30T10:02:02.489547163 93.486799s info: Table 4c227afb-1208-4ed5-895f-e3468a371106: Starting a new Raft election for term 2.
+2016-08-30T10:02:02.568000864 93.565252s info: Table 4c227afb-1208-4ed5-895f-e3468a371106: This server is Raft leader for term 2. Latest log index is 4.
+2016-08-30T10:02:02.596568896 93.593820s info: Table 737a82a4-d076-4138-836a-3a598bef1097: Starting a new Raft election for term 7.
+2016-08-30T10:02:02.684408713 93.681660s info: Table 737a82a4-d076-4138-836a-3a598bef1097: This server is Raft leader for term 7. Latest log index is 30.
+2016-08-30T10:02:02.770849847 93.768101s info: Table 442d25a6-b881-4654-ab37-2600d112161f: Starting a new Raft election for term 7.
+2016-08-30T10:02:02.885080609 93.882332s info: Table 442d25a6-b881-4654-ab37-2600d112161f: This server is Raft leader for term 7. Latest log index is 30.
+2016-08-30T10:02:03.264010734 94.261262s info: Table c6cd3e11-e697-46a8-9030-64469d226527: Starting a new Raft election for term 5.
+2016-08-30T10:02:03.347192277 94.344444s info: Table a92955a4-bbe0-4fa2-bcaa-0053157bb647: Starting a new Raft election for term 7.
+2016-08-30T10:02:03.593881989 94.591135s info: Table c6cd3e11-e697-46a8-9030-64469d226527: This server is Raft leader for term 5. Latest log index is 17.
+2016-08-30T10:02:03.593983749 94.591235s info: Table a92955a4-bbe0-4fa2-bcaa-0053157bb647: This server is Raft leader for term 7. Latest log index is 25.
+2016-08-30T10:37:01.516022137 2192.513273s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.

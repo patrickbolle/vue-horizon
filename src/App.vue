@@ -30,7 +30,8 @@ export default {
     horizon.onDisconnected().subscribe(
       () => console.log("Disconnected from Horizon server")
     )
-  }
+  },
+  methods: {}
 }
 </script>
 
